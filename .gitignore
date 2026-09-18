@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Dependencies / build
+node_modules/
+dist/
+.cache/
+scratchpad/
+
+# Logs
+*.log
+
+# Dev assets kept local (not published, not in the public repo)
+mail-template/
+sarab_ressources/
+Documentation/

@@ -1,0 +1,9 @@
+# Thalia's Traiteur
+# NOTE : ce fichier n'est PAS lu par les moteurs tant que le site vit dans un
+#        sous-dossier de github.io — robots.txt n'est lu qu'à la racine d'un
+#        domaine. Il deviendra actif dès qu'un domaine propre sera branché.
+#        En attendant, soumets le sitemap directement dans Search Console.
+User-agent: *
+Allow: /
+
+Sitemap: https://dovrom.github.io/ThaliasTraiteur/sitemap.xml

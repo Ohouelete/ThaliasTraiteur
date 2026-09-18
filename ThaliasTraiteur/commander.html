@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Thalia's Traiteur">
+   <meta name="description" content="Composez votre commande en ligne et recevez un devis traiteur gratuit sous 24 h. Cuisine ivoirienne faite maison, livrée partout au Québec.">
+   <title>Commander un traiteur ivoirien — devis gratuit | Thalia's</title>
+   <link rel="canonical" href="https://dovrom.github.io/ThaliasTraiteur/commander.html" />
+   <!-- Favicon + SEO / partage — og:url, og:image et canonical sont
+        générées en absolu par tools/seo.py (SITE_URL). -->
+   <link rel="icon" type="image/png" href="img/favicon.png" />
+   <link rel="apple-touch-icon" href="img/favicon.png" />
+   <meta name="robots" content="index, follow" />
+   <meta name="theme-color" content="#ff8200" />
+   <meta property="og:type" content="website" />
+   <meta property="og:site_name" content="Thalia's Traiteur" />
+   <meta property="og:locale" content="fr_CA" />
+   <meta property="og:title" content="Commander un traiteur ivoirien — devis gratuit | Thalia's" />
+   <meta property="og:description" content="Composez votre commande en ligne et recevez un devis traiteur gratuit sous 24 h. Cuisine ivoirienne faite maison, livrée partout au Québec." />
+   <meta property="og:image" content="https://dovrom.github.io/ThaliasTraiteur/img/banner-img.webp" />
+   <meta property="og:url" content="https://dovrom.github.io/ThaliasTraiteur/commander.html" />
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="Commander un traiteur ivoirien — devis gratuit | Thalia's" />
+   <meta name="twitter:description" content="Composez votre commande en ligne et recevez un devis traiteur gratuit sous 24 h. Cuisine ivoirienne faite maison, livrée partout au Québec." />
+   <meta name="twitter:image" content="https://dovrom.github.io/ThaliasTraiteur/img/banner-img.webp" />
+
+   <script>(function(){try{var t=localStorage.getItem("tt-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/all.min.css?v=3919fcba" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/redesign.css" />
+   <link rel="stylesheet" href="css/excellence.css" />
+   <link rel="stylesheet" href="css/sweetalert2.min.css" />
+</head>
+
+<body>
+   <div id="topbar">
+      <div class="container">
+         <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="top-contact d-flex flex-wrap">
+               <span><i class="fas fa-phone-alt"></i><a href="tel:+15145493405" class="tt-tel">+1 (514) 549-3405</a></span>
+               <span><i class="fas fa-envelope"></i>thalias.traiteur@gmail.com</span>
+               <span><i class="fas fa-map-marker-alt"></i>Québec</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+               <span class="ttag"><i class="fas fa-fire me-1"></i>Réservez votre événement !</span>
+               <div class="tsoc">
+                  <a href="https://www.facebook.com/Thaliastraiteur" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-tiktok"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-youtube"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+         <a class="navbar-brand" href="index.html">
+            <img decoding="async" fetchpriority="high" src="img/logo.webp" alt="Thalia's Traiteur - Cuisine ivoirienne & du monde" class="blogo-img" />
+         </a>
+         <div class="nav-actions d-flex align-items-center gap-2 order-lg-last">
+            <button class="tt-cart-btn" data-cart-toggle type="button" title="Mon panier" aria-label="Mon panier"><i class="fas fa-shopping-bag"></i><span class="tt-cart-count">0</span></button>
+            <button id="themeToggle" class="tt-theme-btn" type="button" title="Changer de thème" aria-label="Changer de thème"><i class="fas fa-palette"></i></button>
+            <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+         </div>
+         <div class="collapse navbar-collapse order-lg-2" id="navmenu">
+            <ul class="navbar-nav mx-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html#hero">Accueil</a></li>
+               <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+               <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+               <li class="nav-item"><a class="nav-link active" href="commander.html">Commander</a></li>
+               <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+               <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-orders">
+               <a href="menu.html" class="nav-ord nav-ord--liv" data-set-order="livraison" title="Commander pour livraison"><i class="fas fa-truck-fast"></i>Livraison</a>
+               <a href="menu.html" class="nav-ord nav-ord--evt" data-set-order="evenement" title="Commander pour un événement"><i class="fas fa-champagne-glasses"></i>Événement</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <section class="pagehero">
+      <div class="container">
+         <div class="crumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Commander</div>
+         <h1>Passez votre <span>commande</span></h1>
+         <p>Choisissez votre type de commande. Votre panier est repris automatiquement ci-dessous.</p>
+      </div>
+   </section>
+   <section id="reservation">
+      <div class="container">
+
+         <!-- Guidance banner -->
+         <div class="order-info">
+            <div class="oi-ic"><i class="fas fa-lightbulb"></i></div>
+            <div class="oi-txt">
+               <b>Vous n'avez pas encore choisi vos plats ?</b>
+               <span>Pour vous simplifier la vie, <strong>commencez par le <a href="menu.html">menu</a></strong> : ajoutez vos plats au panier en indiquant le nombre de portions (ou de personnes) pour chacun, puis revenez ici — votre commande sera déjà pré-remplie, il ne restera qu'à finaliser. <em>Si c'est déjà fait, poursuivez simplement ci-dessous.</em></span>
+            </div>
+            <a href="menu.html" class="btn-ed--solid oi-cta"><i class="fas fa-utensils"></i>Parcourir le menu</a>
+         </div>
+
+         <!-- Reassurance -->
+         <div class="reassure">
+            <div class="r"><i class="fas fa-truck-fast"></i><span>Livraison <b>partout au Québec</b></span></div>
+            <div class="r"><i class="fas fa-clock"></i><span>Réponse sous <b>24 h</b></span></div>
+            <div class="r"><i class="fas fa-users"></i><span>Événements <b>dès 10 convives</b></span></div>
+            <div class="r"><i class="fas fa-utensils"></i><span><b>Fait maison</b>, sur commande</span></div>
+            <div class="r"><i class="fas fa-lock"></i><span>Paiement <b>à la confirmation</b></span></div>
+         </div>
+
+         <!-- Order type switch -->
+         <div class="order-modes">
+            <button type="button" class="order-mode" data-mode="livraison">
+               <i class="fas fa-truck-fast"></i>
+               <span class="om-t">Commande &amp; Livraison</span>
+               <span class="om-s">Vos plats préparés et livrés chez vous.</span>
+            </button>
+            <button type="button" class="order-mode" data-mode="evenement">
+               <i class="fas fa-champagne-glasses"></i>
+               <span class="om-t">Traiteur &amp; Événement</span>
+               <span class="om-s">Devis sur mesure pour votre réception.</span>
+            </button>
+         </div>
+
+         <div id="orderPlaceholder" class="order-placeholder">
+            <i class="fas fa-hand-pointer"></i>
+            <b>Choisissez d'abord votre type de commande</b>
+            <span>Sélectionnez « Commande &amp; Livraison » ou « Traiteur &amp; Événement » ci-dessus pour afficher le formulaire.</span>
+         </div>
+
+         <div id="orderContent" style="display:none;">
+         <div class="row g-5">
+            <div class="col-lg-5">
+               <div class="cartsum" id="cartSummary"><h3>Votre commande</h3><p class="cartsum-empty">Votre panier est vide. Ajoutez des plats depuis le <a class="editlink" href="menu.html">menu</a>.</p></div>
+            </div>
+            <div class="col-lg-7">
+               <div class="fcard">
+                  <div class="row g-3">
+                     <!-- Common fields -->
+                     <div class="col-sm-6"><label class="flbl">Nom complet *</label><input type="text" id="oNom" class="fctrl" placeholder="Ex : Awa Koné" /></div>
+                     <div class="col-sm-6"><label class="flbl">Téléphone *</label><input type="tel" id="oTel" class="fctrl" placeholder="+1 (514) 000-0000" /></div>
+                     <div class="col-12"><label class="flbl">Courriel *</label><input type="email" id="oMail" class="fctrl" placeholder="vous@courriel.com" /></div>
+
+                     <!-- Livraison-only -->
+                     <div class="col-sm-6 js-liv"><label class="flbl">Date de livraison *</label><input type="date" id="oDate" class="fctrl" /></div>
+                     <div class="col-sm-6 js-liv"><label class="flbl">Heure *</label><input type="time" id="oHeure" class="fctrl" /></div>
+                     <div class="col-12 js-liv"><label class="flbl">Adresse de livraison *</label><input type="text" id="oAdresse" class="fctrl" placeholder="N°, rue, ville, code postal" /></div>
+
+                     <!-- Événement-only -->
+                     <div class="col-sm-6 js-evt">
+                        <label class="flbl">Type d'événement *</label>
+                        <select id="oType" class="fctrl">
+                           <option>Mariage</option><option>Baptême</option><option>Anniversaire</option><option>Événement d'entreprise</option><option>Réception / Cocktail</option><option>Autre</option>
+                        </select>
+                     </div>
+                     <div class="col-sm-6 js-evt"><label class="flbl">Date de l'événement *</label><input type="date" id="oDateE" class="fctrl" /></div>
+                     <div class="col-sm-6 js-evt"><label class="flbl">Heure *</label><input type="time" id="oHeureE" class="fctrl" /></div>
+                     <div class="col-12 js-evt"><label class="flbl">Lieu de l'événement</label><input type="text" id="oLieu" class="fctrl" placeholder="Salle, ville…" /></div>
+                     <div class="col-12 js-evt">
+                        <label class="flbl">Plats sélectionnés (synchronisés avec votre panier)</label>
+                        <div class="dishcheck" id="dishChecklist"></div>
+                        <p class="dishcheck-hint">Décochez un plat pour le retirer — il se barre et disparaît du panier. Ajoutez-en d'autres depuis le <a href="menu.html">menu</a>.</p>
+                     </div>
+
+                     <!-- Common -->
+                     <div class="col-12"><label class="flbl">Précisions</label><textarea id="oMsg" class="fctrl" rows="3" placeholder="Allergies, budget, précisions..."></textarea></div>
+                     <div class="col-12"><button class="btn-red w-100 justify-content-center" id="orderBtn"><i class="fas fa-truck"></i>Passer la commande</button></div>
+                  </div>
+                  <div class="sucmsg" id="resOk"><i class="fas fa-check-circle"></i><p>Demande envoyée ! Votre logiciel de messagerie s'ouvre avec le récapitulatif — envoyez-le et nous vous recontactons vite.</p></div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </div>
+   </section>
+
+
+   <footer>
+      <div class="container">
+         <div class="row g-5">
+            <div class="col-lg-4">
+               <div class="fnm">Thalia's<span> Traiteur</span></div>
+               <p class="fdesc">Le service traiteur qui apporte les saveurs de la Côte d'Ivoire &mdash; et d'ailleurs &mdash; à tous vos événements, au Québec. Chaque plat cuisiné maison, avec le cœur.</p>
+               <div class="fsoc">
+                  <a href="https://www.facebook.com/Thaliastraiteur" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-tiktok"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-youtube"></i></a>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+               <div class="ftit">Navigation</div>
+               <ul class="flinks ps-0">
+                  <li><a href="index.html"><i class="fas fa-chevron-right"></i>Accueil</a></li>
+                  <li><a href="apropos.html"><i class="fas fa-chevron-right"></i>À propos</a></li>
+                  <li><a href="services.html"><i class="fas fa-chevron-right"></i>Services</a></li>
+                  <li><a href="menu.html"><i class="fas fa-chevron-right"></i>Le menu</a></li>
+                  <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+                  <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+               <div class="ftit">Commander</div>
+               <ul class="flinks ps-0">
+                  <li><a href="menu.html"><i class="fas fa-chevron-right"></i>Voir le menu</a></li>
+                  <li><a href="commander.html"><i class="fas fa-chevron-right"></i>Demander un devis</a></li>
+                  <li><a href="services.html"><i class="fas fa-chevron-right"></i>Nos prestations</a></li>
+                  <li><a href="avis.html"><i class="fas fa-chevron-right"></i>Avis clients</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-4">
+               <div class="ftit">Nous joindre</div>
+               <div class="fci"><div class="fciico"><i class="fas fa-map-marker-alt"></i></div><div class="fciinfo"><strong>Zone</strong>Québec, Canada</div></div>
+               <div class="fci"><div class="fciico"><i class="fas fa-phone-alt"></i></div><div class="fciinfo"><strong>Téléphone</strong><a href="tel:+15145493405" class="tt-tel">+1 (514) 549-3405</a></div></div>
+               <div class="fci"><div class="fciico"><i class="fas fa-envelope"></i></div><div class="fciinfo"><strong>Courriel</strong>thalias.traiteur@gmail.com</div></div>
+               <div class="fci"><div class="fciico"><i class="fas fa-clock"></i></div><div class="fciinfo"><strong>Commandes</strong>Sur réservation · 48h à l'avance</div></div>
+            </div>
+         </div>
+      </div>
+      <div class="fbot">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <p>&copy; 2026 <span>Thalia's Traiteur</span>. Tous droits réservés.</p>
+               <div><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><!-- <a href="credits.html">Crédits photos</a> --></div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="js/config.js"></script>
+   <script src="js/tt-mail.js"></script>
+   <script src="js/analytics.js"></script>
+   <script src="js/tt-widgets.js"></script>
+   <script src="js/sweetalert2.min.js"></script>
+   <script src="js/tt-alerts.js"></script>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/order-type.js"></script>
+   <script src="js/cart.js"></script>
+   <script src="js/order-form.js"></script>
+   <script src="js/theme-switch.js"></script>
+   <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Haut de page" title="Haut de page"><i class="fas fa-chevron-up"></i></button>
+   <script>(function(){var b=document.getElementById("btt");if(b)window.addEventListener("scroll",function(){b.classList.toggle("show",window.scrollY>300);});})();</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700"
+     role="img" aria-label="Photo à venir">
+  <title>Photo à venir</title>
+  <rect width="700" height="700" fill="#EDE8E0"/>
+  <rect x="26" y="26" width="648" height="648" rx="26"
+        fill="none" stroke="#D2C7B6" stroke-width="4" stroke-dasharray="18 14"/>
+  <g transform="translate(350 312)" fill="none" stroke="#B6A992" stroke-width="15"
+     stroke-linecap="round" stroke-linejoin="round">
+    <!-- boîtier appareil photo -->
+    <path d="M-112 -46h54l20-30h76l20 30h54a26 26 0 0 1 26 26v122a26 26 0 0 1-26 26h-224a26 26 0 0 1-26-26v-122a26 26 0 0 1 26-26z"/>
+    <circle cx="0" cy="46" r="46"/>
+    <!-- barre « aucune photo » -->
+    <path d="M-140 -104 L140 152" stroke="#A2937E" stroke-width="17"/>
+  </g>
+  <text x="350" y="512" text-anchor="middle"
+        font-family="Poppins, 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif"
+        font-size="46" font-weight="600" fill="#8C7C64" letter-spacing="1">Photo à venir</text>
+  <text x="350" y="560" text-anchor="middle"
+        font-family="Poppins, 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif"
+        font-size="27" font-weight="400" fill="#A99A85">aucune photo fournie</text>
+</svg>

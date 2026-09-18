@@ -1,0 +1,148 @@
+/* ================================================================
+   EXCELLENCE — couche de finition (chargée en dernier).
+   Polish transversal : rythme, cartes, micro-interactions, a11y,
+   responsive. 100% theme-aware (utilise les tokens existants).
+   ================================================================ */
+
+/* ---- Base : rendu typographique premium ---- */
+html { scroll-behavior: smooth; }
+body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+::selection { background: var(--primary); color: #fff; }
+img { max-width: 100%; }
+
+/* Titres : équilibre + coupure propre des mots longs */
+h1, h2, h3, .stitle, .hero-title, .sptitle, .pagehero h1 {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+p { text-wrap: pretty; }
+
+/* ---- Accessibilité : focus visible cohérent ---- */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible,
+select:focus-visible, [tabindex]:focus-visible, .btn-red:focus-visible,
+.btn-ed--solid:focus-visible, .btn-ed--ghost:focus-visible, [data-cart-toggle]:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---- Section headers : respiration + finesse ---- */
+.slbl { display: inline-block; }
+.sline { transition: width .4s ease; }
+
+/* ---- Boutons : transitions + profondeur maîtrisée ---- */
+.btn-red, .btn-ed--solid {
+  transition: transform .25s cubic-bezier(.2,.7,.3,1), box-shadow .25s ease, background .25s ease;
+  will-change: transform;
+}
+.btn-red:hover, .btn-ed--solid:hover {
+  box-shadow: 0 12px 26px rgba(var(--primary-rgb), .28);
+}
+.btn-red:active, .btn-ed--solid:active, .btn-ed--ghost:active { transform: translateY(0) scale(.99); }
+
+/* ---- Cartes : cohérence + élévation douce au survol ---- */
+.mcard, .catcard, .trustcard, .formcard, .tescard, .blogcard, .fcard, .hrscard, .svc-card {
+  transition: transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease, border-color .3s ease;
+}
+.mcard:hover, .catcard:hover, .blogcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(0,0,0,.10);
+}
+
+/* Zoom d'image contenu dans les cartes (effet éditorial) */
+.mcard, .catcard, .blogcard, .portfolio-item, .gitem, .svcrow-media { overflow: hidden; }
+.mcard img, .catcard .catimg, .blogcard img, .portfolio-item img, .gitem img, .svcrow-media img {
+  transition: transform .6s cubic-bezier(.2,.7,.3,1);
+}
+.mcard:hover img, .catcard:hover .catimg, .blogcard:hover img,
+.portfolio-item:hover img, .gitem:hover img, .svcrow:hover .svcrow-media img {
+  transform: scale(1.06);
+}
+
+/* Liens de contenu : souligné animé discret */
+.fdesc a, .formnote a, .faq-a a, .legal a {
+  color: var(--primary);
+  text-decoration: none;
+  background-image: linear-gradient(var(--primary), var(--primary));
+  background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat;
+  transition: background-size .3s ease;
+}
+.fdesc a:hover, .formnote a:hover, .faq-a a:hover, .legal a:hover { background-size: 100% 1px; }
+
+/* Icônes sociales : transition propre */
+.fsoc a, .tsoc a, .ctsocrow a { transition: transform .2s ease, color .2s ease, background .2s ease; }
+.fsoc a:hover, .tsoc a:hover, .ctsocrow a:hover { transform: translateY(-3px); }
+
+/* Apparition d'image nette (évite le flash gris) */
+.hero-media img, .amain img { backface-visibility: hidden; }
+
+/* ---- Rythme vertical un peu plus généreux sur grand écran ---- */
+@media (min-width: 1200px) {
+  #trust, #formules, #how, #about, #category, #services, #testimonials { scroll-margin-top: 90px; }
+}
+
+/* ---- Polish responsive (petits écrans) ---- */
+@media (max-width: 600px) {
+  .slbl { letter-spacing: 2.5px; }
+  .sdesc { font-size: .95rem; }
+  .trustcard, .formcard { padding: 22px 18px; }
+  section { background-position: center; }
+}
+
+/* ---- Bloc « invitation à laisser un avis » (honnête, en attendant les vrais) ---- */
+.tesinvite {
+  max-width: 680px; margin: 0 auto; text-align: center;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 18px;
+  padding: 44px 34px; box-shadow: 0 16px 44px rgba(0,0,0,.06);
+}
+.tesinvite-ic {
+  width: 64px; height: 64px; margin: 0 auto 20px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
+  color: var(--primary); background: color-mix(in srgb, var(--primary) 12%, transparent);
+}
+.tesinvite p { color: var(--text-muted); font-size: 1.02rem; line-height: 1.75; margin: 0 auto 26px; max-width: 560px; }
+.tesinvite-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+@media (max-width: 600px) {
+  .tesinvite { padding: 32px 20px; }
+  .tesinvite-cta { flex-direction: column; }
+  .tesinvite-cta .btn-ed--solid, .tesinvite-cta .btn-ed--ghost { width: 100%; justify-content: center; }
+}
+
+/* ---- Formulaires : focus premium (halo doux) ---- */
+.fctrl, .nlinput, .msearch {
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.fctrl:focus, .nlinput:focus, .msearch:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), .14) !important;
+  outline: none !important;
+}
+.fctrl::placeholder, .msearch::placeholder { color: var(--text-faint); }
+
+/* ---- Page-heros (pages secondaires) : profondeur subtile ---- */
+.pagehero {
+  background: radial-gradient(130% 150% at 50% -30%,
+              color-mix(in srgb, var(--primary) 9%, var(--cream)) 0%,
+              var(--cream) 58%) !important;
+}
+.pagehero h1 { letter-spacing: -0.5px; }
+
+/* ---- Filtres du menu : pastilles plus vivantes ---- */
+.filtbtn { transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease; }
+.filtbtn:hover { transform: translateY(-1px); }
+
+/* ---- Marqueur de section : petit trait animé sous le label ---- */
+.slbl { position: relative; }
+
+/* ---- Liens de navigation : transition douce ---- */
+#nav .nav-link { transition: color .2s ease; }
+
+/* ---- Respect des préférences de mouvement ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+}

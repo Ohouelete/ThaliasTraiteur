@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Thalia's Traiteur">
+   <meta name="description" content="Le menu complet de Thalia's Traiteur : tchep, attiéké, garba, alloco, poulet braisé et cuisine du monde. Plats faits maison pour vos événements au Québec.">
+   <title>Menu traiteur ivoirien : tchep, attiéké, garba | Thalia's</title>
+   <link rel="canonical" href="https://dovrom.github.io/ThaliasTraiteur/menu.html" />
+   <!-- Favicon + SEO / partage — og:url, og:image et canonical sont
+        générées en absolu par tools/seo.py (SITE_URL). -->
+   <link rel="icon" type="image/png" href="img/favicon.png" />
+   <link rel="apple-touch-icon" href="img/favicon.png" />
+   <meta name="robots" content="index, follow" />
+   <meta name="theme-color" content="#ff8200" />
+   <meta property="og:type" content="website" />
+   <meta property="og:site_name" content="Thalia's Traiteur" />
+   <meta property="og:locale" content="fr_CA" />
+   <meta property="og:title" content="Menu traiteur ivoirien : tchep, attiéké, garba | Thalia's" />
+   <meta property="og:description" content="Le menu complet de Thalia's Traiteur : tchep, attiéké, garba, alloco, poulet braisé et cuisine du monde. Plats faits maison pour vos événements au Québec." />
+   <meta property="og:image" content="https://dovrom.github.io/ThaliasTraiteur/img/banner-img.webp" />
+   <meta property="og:url" content="https://dovrom.github.io/ThaliasTraiteur/menu.html" />
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="Menu traiteur ivoirien : tchep, attiéké, garba | Thalia's" />
+   <meta name="twitter:description" content="Le menu complet de Thalia's Traiteur : tchep, attiéké, garba, alloco, poulet braisé et cuisine du monde. Plats faits maison pour vos événements au Québec." />
+   <meta name="twitter:image" content="https://dovrom.github.io/ThaliasTraiteur/img/banner-img.webp" />
+
+   <script>
+      (function () { try { var t = localStorage.getItem("tt-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+   </script>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet" />
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/all.min.css?v=3919fcba" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/redesign.css" />
+   <link rel="stylesheet" href="css/excellence.css" />
+   <link rel="stylesheet" href="css/sweetalert2.min.css" />
+   <style>
+      /* Menu page banner */
+      #menuhero { background: var(--cream); padding: 54px 0 34px; text-align: center; }
+      #menuhero .mhcrumb { font-size: .85rem; color: #999; margin-bottom: 8px; }
+      #menuhero .mhcrumb a { color: var(--primary); font-weight: 600; }
+      #menupage { padding: 40px 0 90px; }
+   </style>
+</head>
+
+<body>
+   <!-- TOP BAR -->
+   <div id="topbar">
+      <div class="container">
+         <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="top-contact d-flex flex-wrap">
+               <span><i class="fas fa-phone-alt"></i><a href="tel:+15145493405" class="tt-tel">+1 (514) 549-3405</a></span>
+               <span><i class="fas fa-envelope"></i>thalias.traiteur@gmail.com</span>
+               <span><i class="fas fa-map-marker-alt"></i>Québec</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+               <span class="ttag"><i class="fas fa-fire me-1"></i>Réservez votre événement !</span>
+               <div class="tsoc">
+                  <a href="https://www.facebook.com/Thaliastraiteur" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-tiktok"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-youtube"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+         <a class="navbar-brand" href="index.html">
+            <img decoding="async" fetchpriority="high" src="img/logo.webp" alt="Thalia's Traiteur - Cuisine ivoirienne & du monde" class="blogo-img" />
+         </a>
+         <div class="nav-actions d-flex align-items-center gap-2 order-lg-last">
+            <button class="tt-cart-btn" data-cart-toggle type="button" title="Mon panier" aria-label="Mon panier"><i class="fas fa-shopping-bag"></i><span class="tt-cart-count">0</span></button>
+            <button id="themeToggle" class="tt-theme-btn" type="button" title="Changer de thème" aria-label="Changer de thème"><i class="fas fa-palette"></i></button>
+            <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+         </div>
+         <div class="collapse navbar-collapse order-lg-2" id="navmenu">
+            <ul class="navbar-nav mx-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html#hero">Accueil</a></li>
+               <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+               <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+               <li class="nav-item"><a class="nav-link" href="commander.html">Commander</a></li>
+               <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+               <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-orders">
+               <a href="menu.html" class="nav-ord nav-ord--liv" data-set-order="livraison" title="Commander pour livraison"><i class="fas fa-truck-fast"></i>Livraison</a>
+               <a href="menu.html" class="nav-ord nav-ord--evt" data-set-order="evenement" title="Commander pour un événement"><i class="fas fa-champagne-glasses"></i>Événement</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- MENU HERO -->
+   <section id="menuhero">
+      <div class="container">
+         <div class="mhcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Menu</div>
+         <span class="slbl">La carte au complet</span>
+         <h1 class="stitle">Notre <span>Menu</span> Ivoirien &amp; d'ailleurs</h1>
+         <div class="sline"></div>
+         <p class="sdesc mx-auto" style="max-width:540px;">Tous nos plats en un coup d'œil. Cliquez sur un plat pour le
+            détail, puis demandez votre devis personnalisé pour composer le menu de votre événement.</p>
+      </div>
+   </section>
+
+   <!-- MENU GRID -->
+   <section id="menupage">
+      <div class="container">
+         <div class="msearch-wrap">
+            <i class="fas fa-search msearch-ic"></i>
+            <input type="search" id="mSearch" class="msearch" placeholder="Rechercher un plat…" autocomplete="off" aria-label="Rechercher un plat" />
+            <button type="button" id="mSearchClear" class="msearch-clr" aria-label="Effacer" hidden><i class="fas fa-times"></i></button>
+         </div>
+         <div class="text-center mb-4">
+            <button class="filtbtn active" data-f="all">Tout</button>
+            <button class="filtbtn" data-f="specialites">Spécialités</button>
+            <button class="filtbtn" data-f="grillades">Grillades</button>
+            <button class="filtbtn" data-f="soupes">Soupes &amp; Entrées</button>
+            <button class="filtbtn" data-f="exotiques">Exotiques</button>
+            <button class="filtbtn" data-f="fraiches">Entrées Fraîches</button>
+            <button class="filtbtn" data-f="desserts">Desserts</button>
+         </div>
+         <div class="row g-4" id="mgrid">
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Tchep" data-cat="Nos Spécialités"
+                  data-price="32 $" data-old="" data-rating="4.9" data-reviews="40"
+                  data-cal="1 pers." data-time="48h" data-desc="au poisson ou à la viande, au choix" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Tchep &mdash; photo à venir" />
+                     <div class="mbdg hot"><i class="fas fa-star"></i> Populaire</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Tchep</div>
+                     <div class="mdesc">au poisson ou à la viande, au choix</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">32 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(40)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Riz" data-cat="Nos Spécialités"
+                  data-price="32 $" data-old="" data-rating="4.7" data-reviews="57"
+                  data-cal="1 pers." data-time="48h" data-desc="sauce tomate ou aubergines · graine arrachée, sauce épinards" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Riz &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Riz</div>
+                     <div class="mdesc">sauce tomate ou aubergines · graine arrachée, sauce épinards</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">32 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(57)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/dishes/placali.webp" data-title="Placali Sauce Kopé" data-cat="Nos Spécialités"
+                  data-price="32 $" data-old="" data-rating="5.0" data-reviews="74"
+                  data-cal="1 pers." data-time="48h" data-desc="placali accompagné de la savoureuse sauce kopé" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/placali.webp" alt="Placali Sauce Kopé" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Placali Sauce Kopé</div>
+                     <div class="mdesc">placali accompagné de la savoureuse sauce kopé</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">32 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/dishes/chocouya.webp" data-title="Chocouya" data-cat="Nos Spécialités"
+                  data-price="27 $" data-old="" data-rating="4.8" data-reviews="91"
+                  data-cal="1 pers." data-time="48h" data-desc="agneau, cabri ou poulet — accompagnement au choix" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/chocouya.webp" alt="Chocouya" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Chocouya</div>
+                     <div class="mdesc">agneau, cabri ou poulet — accompagnement au choix</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(91)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/dishes/garba.webp" data-title="Garba" data-cat="Nos Spécialités"
+                  data-price="22 $" data-old="" data-rating="4.6" data-reviews="108"
+                  data-cal="1 pers." data-time="48h" data-desc="thon frit et attiéké, le classique de la rue" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/garba.webp" alt="Garba" />
+                     <div class="mbdg hot"><i class="fas fa-star"></i> Populaire</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Garba</div>
+                     <div class="mdesc">thon frit et attiéké, le classique de la rue</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">22 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(108)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/dishes/dokounou.webp" data-title="Dôkounou" data-cat="Nos Spécialités"
+                  data-price="27 $" data-old="" data-rating="4.9" data-reviews="125"
+                  data-cal="1 pers." data-time="48h" data-desc="spécialité traditionnelle ivoirienne" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/dokounou.webp" alt="Dôkounou" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Dôkounou</div>
+                     <div class="mdesc">spécialité traditionnelle ivoirienne</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(125)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="specialites">
+               <div class="mcard" data-img="img/dishes/abolo.webp" data-imgs="img/dishes/abolo.webp,img/dishes/abolo-2.webp,img/dishes/abolo-3.webp,img/dishes/abolo-4.webp" data-title="Abolo" data-cat="Nos Spécialités"
+                  data-price="27 $" data-old="" data-rating="4.9" data-reviews="142"
+                  data-cal="1 pers." data-time="48h" data-desc="galette de maïs fermenté, moelleuse" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/abolo.webp" alt="Abolo" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Nos Spécialités</div>
+                     <div class="mtit">Abolo</div>
+                     <div class="mdesc">galette de maïs fermenté, moelleuse</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(142)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Poulet Braisé" data-cat="Plats Grillés"
+                  data-price="27 $" data-old="" data-rating="4.7" data-reviews="159"
+                  data-cal="1 pers." data-time="48h" data-desc="frites, alloco, igname frite" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Poulet Braisé &mdash; photo à venir" />
+                     <div class="mbdg"><i class="fas fa-star"></i> Best-seller</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Poulet Braisé</div>
+                     <div class="mdesc">frites, alloco, igname frite</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(159)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Poisson Braisé" data-cat="Plats Grillés"
+                  data-price="27 $" data-old="" data-rating="5.0" data-reviews="176"
+                  data-cal="1 pers." data-time="48h" data-desc="frites, alloco, attiéké" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Poisson Braisé &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Poisson Braisé</div>
+                     <div class="mdesc">frites, alloco, attiéké</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(176)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Côtelettes de Porc Braisées" data-cat="Plats Grillés"
+                  data-price="29 $" data-old="" data-rating="4.8" data-reviews="193"
+                  data-cal="1 pers." data-time="48h" data-desc="et légumes grillés" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Côtelettes de Porc Braisées &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Côtelettes de Porc Braisées</div>
+                     <div class="mdesc">et légumes grillés</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">29 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(193)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Brochettes de Poulet" data-cat="Plats Grillés"
+                  data-price="27 $" data-old="" data-rating="4.6" data-reviews="210"
+                  data-cal="1 pers." data-time="48h" data-desc="brochettes marinées et grillées" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Brochettes de Poulet &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Brochettes de Poulet</div>
+                     <div class="mdesc">brochettes marinées et grillées</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Brochettes de Tilapia" data-cat="Plats Grillés"
+                  data-price="27 $" data-old="" data-rating="4.9" data-reviews="47"
+                  data-cal="1 pers." data-time="48h" data-desc="tilapia grillé au feu" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Brochettes de Tilapia &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Brochettes de Tilapia</div>
+                     <div class="mdesc">tilapia grillé au feu</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(47)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Poulet BBQ et ses Légumes Grillés" data-cat="Plats Grillés"
+                  data-price="27 $" data-old="" data-rating="4.9" data-reviews="64"
+                  data-cal="1 pers." data-time="48h" data-desc="poulet BBQ et légumes grillés" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Poulet BBQ et ses Légumes Grillés &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Poulet BBQ et ses Légumes Grillés</div>
+                     <div class="mdesc">poulet BBQ et légumes grillés</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">27 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(64)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="grillades">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Saumon Grillé et ses Légumes" data-cat="Plats Grillés"
+                  data-price="32 $" data-old="" data-rating="4.7" data-reviews="81"
+                  data-cal="1 pers." data-time="48h" data-desc="pavé de saumon grillé, légumes de saison" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Saumon Grillé et ses Légumes &mdash; photo à venir" />
+                     <div class="mbdg new"><i class="fas fa-star"></i> Nouveau</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Grillés</div>
+                     <div class="mtit">Saumon Grillé et ses Légumes</div>
+                     <div class="mdesc">pavé de saumon grillé, légumes de saison</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">32 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(81)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="soupes">
+               <div class="mcard" data-img="img/dishes/soupe-chasseur.webp" data-title="Soupe du Chasseur" data-cat="Soupes &amp; Entrées"
+                  data-price="37 $" data-old="" data-rating="5.0" data-reviews="98"
+                  data-cal="1 pers." data-time="48h" data-desc="soupe riche en viande, épices du pays" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/soupe-chasseur.webp" alt="Soupe du Chasseur" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Soupes &amp; Entrées</div>
+                     <div class="mtit">Soupe du Chasseur</div>
+                     <div class="mdesc">soupe riche en viande, épices du pays</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">37 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(98)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="soupes">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Soupe du Pêcheur" data-cat="Soupes &amp; Entrées"
+                  data-price="37 $" data-old="" data-rating="4.8" data-reviews="115"
+                  data-cal="1 pers." data-time="48h" data-desc="poisson et fruits de mer mijotés" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Soupe du Pêcheur &mdash; photo à venir" />
+                     <div class="mbdg hot"><i class="fas fa-star"></i> Coup de cœur</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Soupes &amp; Entrées</div>
+                     <div class="mtit">Soupe du Pêcheur</div>
+                     <div class="mdesc">poisson et fruits de mer mijotés</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">37 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(115)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="soupes">
+               <div class="mcard" data-img="img/dishes/escargots.webp" data-title="Escargots Sautés" data-cat="Soupes &amp; Entrées"
+                  data-price="37 $" data-old="" data-rating="4.6" data-reviews="132"
+                  data-cal="1 pers." data-time="48h" data-desc="escargots sautés à la sauce parfumée" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/escargots.webp" alt="Escargots Sautés" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Soupes &amp; Entrées</div>
+                     <div class="mtit">Escargots Sautés</div>
+                     <div class="mdesc">escargots sautés à la sauce parfumée</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">37 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(132)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="soupes">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Gbofloto" data-cat="Soupes &amp; Entrées"
+                  data-price="17 $" data-old="" data-rating="4.9" data-reviews="149"
+                  data-cal="1 pers." data-time="48h" data-desc="beignets moelleux typiques" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Gbofloto &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Soupes &amp; Entrées</div>
+                     <div class="mtit">Gbofloto</div>
+                     <div class="mdesc">beignets moelleux typiques</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(149)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="exotiques">
+               <div class="mcard" data-img="img/dishes/beignets.webp" data-title="Beignets Jaune + Vermicelles" data-cat="Plats Exotiques"
+                  data-price="17 $" data-old="" data-rating="4.9" data-reviews="166"
+                  data-cal="1 pers." data-time="48h" data-desc="beignets jaunes et vermicelles" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/beignets.webp" alt="Beignets Jaune + Vermicelles" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Exotiques</div>
+                     <div class="mtit">Beignets Jaune + Vermicelles</div>
+                     <div class="mdesc">beignets jaunes et vermicelles</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(166)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="exotiques">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Repas d&#x27;Ailleurs" data-cat="Plats Exotiques"
+                  data-price="12 $" data-old="" data-rating="4.7" data-reviews="183"
+                  data-cal="1 pers." data-time="48h" data-desc="le plat voyageur du moment" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Repas d&#x27;Ailleurs &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Exotiques</div>
+                     <div class="mtit">Repas d'Ailleurs</div>
+                     <div class="mdesc">le plat voyageur du moment</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">12 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(183)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="exotiques">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Brochettes de Filles Mignons" data-cat="Plats Exotiques"
+                  data-price="32 $" data-old="" data-rating="5.0" data-reviews="200"
+                  data-cal="1 pers." data-time="48h" data-desc="brochettes tendres et savoureuses" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Brochettes de Filles Mignons &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Exotiques</div>
+                     <div class="mtit">Brochettes de Filles Mignons</div>
+                     <div class="mdesc">brochettes tendres et savoureuses</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">32 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(200)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="exotiques">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Marmite de Fruits de Mer et Légumes" data-cat="Plats Exotiques"
+                  data-price="37 $" data-old="" data-rating="4.8" data-reviews="217"
+                  data-cal="1 pers." data-time="48h" data-desc="fruits de mer et légumes à la sauce épicée" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Marmite de Fruits de Mer et Légumes &mdash; photo à venir" />
+                     <div class="mbdg new"><i class="fas fa-star"></i> Nouveau</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Plats Exotiques</div>
+                     <div class="mtit">Marmite de Fruits de Mer et Légumes</div>
+                     <div class="mdesc">fruits de mer et légumes à la sauce épicée</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">37 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(217)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade Crevettes Avocat" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.6" data-reviews="54"
+                  data-cal="1 pers." data-time="48h" data-desc="crevettes, avocat et crudités fraîches" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade Crevettes Avocat &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Salade Crevettes Avocat</div>
+                     <div class="mdesc">crevettes, avocat et crudités fraîches</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(54)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/dishes/nems.webp" data-imgs="img/dishes/nems.webp,img/dishes/nems-2.webp,img/dishes/nems-3.webp" data-title="Nems ou Rouleaux" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.9" data-reviews="71"
+                  data-cal="1 pers." data-time="48h" data-desc="au bœuf, porc ou légumes" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/nems.webp" alt="Nems ou Rouleaux" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Nems ou Rouleaux</div>
+                     <div class="mdesc">au bœuf, porc ou légumes</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(71)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade de Thon" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.9" data-reviews="88"
+                  data-cal="1 pers." data-time="48h" data-desc="salade fraîche au thon" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade de Thon &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Salade de Thon</div>
+                     <div class="mdesc">salade fraîche au thon</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade de tomates mozzarella" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.7" data-reviews="105"
+                  data-cal="1 pers." data-time="48h" data-desc="tomates et mozzarella" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade de tomates mozzarella &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Salade de tomates mozzarella</div>
+                     <div class="mdesc">tomates et mozzarella</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(105)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade de tomates au concombre et mozzarella" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="5.0" data-reviews="122"
+                  data-cal="1 pers." data-time="48h" data-desc="tomates, concombre et mozzarella" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade de tomates au concombre et mozzarella &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Salade de tomates au concombre et mozzarella</div>
+                     <div class="mdesc">tomates, concombre et mozzarella</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(122)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Tomate farcie aux œufs" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.8" data-reviews="139"
+                  data-cal="1 pers." data-time="48h" data-desc="tomate farcie aux œufs" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Tomate farcie aux œufs &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Tomate farcie aux œufs</div>
+                     <div class="mdesc">tomate farcie aux œufs</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(139)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade de tomates aux épices grecques" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.6" data-reviews="156"
+                  data-cal="1 pers." data-time="48h" data-desc="tomates aux épices grecques" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade de tomates aux épices grecques &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Salade de tomates aux épices grecques</div>
+                     <div class="mdesc">tomates aux épices grecques</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(156)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="fraiches">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade de tomates" data-cat="Entrées Fraîches"
+                  data-price="17 $" data-old="" data-rating="4.9" data-reviews="173"
+                  data-cal="1 pers." data-time="48h" data-desc="salade de tomates fraîches" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade de tomates &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Entrées Fraîches</div>
+                     <div class="mtit">Salade de tomates</div>
+                     <div class="mdesc">salade de tomates fraîches</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">17 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(173)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Salade de fruits de saison" data-cat="Desserts"
+                  data-price="10 $" data-old="" data-rating="4.9" data-reviews="190"
+                  data-cal="1 pers." data-time="48h" data-desc="fruits frais de saison" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Salade de fruits de saison &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Desserts</div>
+                     <div class="mtit">Salade de fruits de saison</div>
+                     <div class="mdesc">fruits frais de saison</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">10 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(190)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Crème glacée au baobab" data-cat="Desserts"
+                  data-price="10 $" data-old="" data-rating="4.7" data-reviews="207"
+                  data-cal="1 pers." data-time="48h" data-desc="crème glacée au fruit du baobab" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Crème glacée au baobab &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Desserts</div>
+                     <div class="mtit">Crème glacée au baobab</div>
+                     <div class="mdesc">crème glacée au fruit du baobab</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">10 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(207)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts">
+               <div class="mcard" data-img="img/dishes/degue.webp" data-title="Deguê" data-cat="Desserts"
+                  data-price="10 $" data-old="" data-rating="5.0" data-reviews="44"
+                  data-cal="1 pers." data-time="48h" data-desc="mil et yaourt onctueux, sucré" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/dishes/degue.webp" alt="Deguê" />
+                     <div class="mbdg new"><i class="fas fa-star"></i> Nouveau</div>
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Desserts</div>
+                     <div class="mtit">Deguê</div>
+                     <div class="mdesc">mil et yaourt onctueux, sucré</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">10 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(44)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts">
+               <div class="mcard" data-img="img/photo-manquante.svg" data-title="Gâteau triple chocolat" data-cat="Desserts"
+                  data-price="10 $" data-old="" data-rating="4.8" data-reviews="61"
+                  data-cal="1 pers." data-time="48h" data-desc="et son coulis de fruits" data-tags="">
+                  <div class="mimg">
+                     <img loading="lazy" decoding="async" src="img/photo-manquante.svg" alt="Gâteau triple chocolat &mdash; photo à venir" />
+                     
+                     <div class="mhrt"><i class="far fa-heart"></i></div>
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Desserts</div>
+                     <div class="mtit">Gâteau triple chocolat</div>
+                     <div class="mdesc">et son coulis de fruits</div>
+                     <div class="mfoot">
+                        <div>
+                           <div class="mprice">10 $</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(61)</span></div>
+                        </div>
+                        <button class="madd" title="Voir le détail"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p id="mNoResult" class="mnoresult" style="display:none;"><i class="fas fa-utensils"></i> Aucun plat ne correspond à votre recherche.</p>
+      </div>
+   </section>
+
+   <!-- MENU DETAIL POPUP MODAL -->
+   <div id="menuPop">
+      <div class="mpbox">
+         <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+         <div class="mpchooser" style="display:none;">
+            <h4>Comment souhaitez-vous commander&nbsp;?</h4>
+            <p>Choisissez d'abord votre type de commande.</p>
+            <div class="mpchoose-btns">
+               <button type="button" data-choose="livraison"><i class="fas fa-truck-fast"></i><b>Commande &amp; Livraison</b><small>Plats livrés chez vous · à la portion, prix affichés</small></button>
+               <button type="button" data-choose="evenement"><i class="fas fa-champagne-glasses"></i><b>Traiteur &amp; Événement</b><small>Devis sur mesure · au nombre de personnes</small></button>
+            </div>
+         </div>
+         <div class="mpview">
+            <div class="mpimg">
+               <div class="mpcar" id="mpCar">
+                  <div class="mpcar-track" id="mpCarTrack"></div>
+                  <button class="mpcar-nav mpcar-prev" id="mpCarPrev" type="button" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+                  <button class="mpcar-nav mpcar-next" id="mpCarNext" type="button" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+                  <div class="mpcar-dots" id="mpCarDots"></div>
+               </div>
+            </div>
+            <div class="mpbody">
+               <div class="mp-typebar">
+                  <span class="mp-typelbl">Type de commande</span>
+                  <div class="ordtoggle">
+                     <button type="button" data-ordtoggle="livraison"><i class="fas fa-truck-fast"></i>Livraison</button>
+                     <button type="button" data-ordtoggle="evenement"><i class="fas fa-champagne-glasses"></i>Événement</button>
+                  </div>
+               </div>
+               <div id="mpCat"></div>
+               <div id="mpTitle"></div>
+               <div id="mpStars"></div>
+               <div id="mpDesc"></div>
+               <div id="mpPrice"></div>
+               <div class="mpmeta" id="mpMeta"></div>
+               <div class="mpqty">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <input class="mpqnum" id="mpQnum" type="number" min="1" step="1" value="1" inputmode="numeric" aria-label="Quantité" />
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span id="mpQtyLabel" style="font-size:.82rem;color:#aaa;margin-left:9px;">portion(s)</span>
+               </div>
+               <div class="mptags" id="mpTags"></div>
+               <button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>Ajouter à ma commande</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="container">
+         <div class="row g-5">
+            <div class="col-lg-4">
+               <div class="fnm">Thalia's<span> Traiteur</span></div>
+               <p class="fdesc">Le service traiteur qui apporte les saveurs de la Côte d'Ivoire &mdash; et d'ailleurs &mdash; à tous vos événements, au Québec. Chaque plat cuisiné maison, avec le cœur.</p>
+               <div class="fsoc">
+                  <a href="https://www.facebook.com/Thaliastraiteur" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-tiktok"></i></a>
+                  <a href="#" class="soc-soon" title="Bientôt" onclick="return false;"><i class="fab fa-youtube"></i></a>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+               <div class="ftit">Navigation</div>
+               <ul class="flinks ps-0">
+                  <li><a href="index.html"><i class="fas fa-chevron-right"></i>Accueil</a></li>
+                  <li><a href="apropos.html"><i class="fas fa-chevron-right"></i>À propos</a></li>
+                  <li><a href="services.html"><i class="fas fa-chevron-right"></i>Services</a></li>
+                  <li><a href="menu.html"><i class="fas fa-chevron-right"></i>Le menu</a></li>
+                  <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+                  <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+               <div class="ftit">Commander</div>
+               <ul class="flinks ps-0">
+                  <li><a href="menu.html"><i class="fas fa-chevron-right"></i>Voir le menu</a></li>
+                  <li><a href="commander.html"><i class="fas fa-chevron-right"></i>Demander un devis</a></li>
+                  <li><a href="services.html"><i class="fas fa-chevron-right"></i>Nos prestations</a></li>
+                  <li><a href="avis.html"><i class="fas fa-chevron-right"></i>Avis clients</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-4">
+               <div class="ftit">Nous joindre</div>
+               <div class="fci"><div class="fciico"><i class="fas fa-map-marker-alt"></i></div><div class="fciinfo"><strong>Zone</strong>Québec, Canada</div></div>
+               <div class="fci"><div class="fciico"><i class="fas fa-phone-alt"></i></div><div class="fciinfo"><strong>Téléphone</strong><a href="tel:+15145493405" class="tt-tel">+1 (514) 549-3405</a></div></div>
+               <div class="fci"><div class="fciico"><i class="fas fa-envelope"></i></div><div class="fciinfo"><strong>Courriel</strong>thalias.traiteur@gmail.com</div></div>
+               <div class="fci"><div class="fciico"><i class="fas fa-clock"></i></div><div class="fciinfo"><strong>Commandes</strong>Sur réservation · 48h à l'avance</div></div>
+            </div>
+         </div>
+      </div>
+      <div class="fbot">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <p>&copy; 2026 <span>Thalia's Traiteur</span>. Tous droits réservés.</p>
+               <div><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><!-- <a href="credits.html">Crédits photos</a> --></div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Theme switcher -->
+
+   <script src="js/config.js"></script>
+   <script src="js/tt-mail.js"></script>
+   <script src="js/analytics.js"></script>
+   <script src="js/tt-widgets.js"></script>
+   <script src="js/sweetalert2.min.js"></script>
+   <script src="js/tt-alerts.js"></script>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/menu-page.js"></script>
+   <script src="js/order-type.js"></script>
+   <script src="js/cart.js"></script>
+   <script src="js/popup-carousel.js"></script>
+   <script src="js/theme-switch.js"></script>
+   <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Haut de page" title="Haut de page"><i class="fas fa-chevron-up"></i></button>
+   <script>(function(){var b=document.getElementById("btt");if(b)window.addEventListener("scroll",function(){b.classList.toggle("show",window.scrollY>300);});})();</script>
+</body>
+
+</html>

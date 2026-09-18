@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Avatar cliente">
+  <defs>
+    <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffbf73"/>
+      <stop offset="1" stop-color="#ff8200"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" fill="url(#gf)"/>
+  <g fill="#ffffff">
+    <!-- cheveux (longs, encadrent le visage) -->
+    <path d="M27 60 C22 42 27 24 50 24 C73 24 78 42 73 60 C71 52 68 47 63 45 C66 40 65 33 50 33 C35 33 34 40 37 45 C32 47 29 52 27 60 Z"/>
+    <!-- visage -->
+    <circle cx="50" cy="45" r="14"/>
+    <!-- buste / épaules -->
+    <path d="M24 90 C24 72 36 63 50 63 C64 63 76 72 76 90 Z"/>
+  </g>
+</svg>
