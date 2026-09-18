@@ -16,8 +16,7 @@ from datetime import date
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  ⬇⬇⬇  LA SEULE LIGNE À CHANGER LE JOUR DU NOM DE DOMAINE  ⬇⬇⬇
-SITE_URL = "https://dovrom.github.io/ThaliasTraiteur"
-#  ex. plus tard :  SITE_URL = "https://thaliastraiteur.ca"
+SITE_URL = "https://thaliastraiteur.com"
 # ─────────────────────────────────────────────────────────────────────────────
 
 ROOT    = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
