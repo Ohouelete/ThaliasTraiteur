@@ -1727,3 +1727,19 @@ a.soc-soon:hover { opacity: 0.8; }
   .tt-sticky-cta:active { transform: scale(0.98); }
   body { padding-bottom: 78px; }
 }
+
+/* ---- Facebook rating stat (avis en attendant les temoignages maison) ---- */
+.fbrate-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--heading, var(--text));
+  font-size: 0.92rem;
+}
+.fbrate-stat i.fas.fa-star { color: #f6a623; font-size: 0.8rem; }
