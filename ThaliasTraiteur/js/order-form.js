@@ -229,6 +229,14 @@
       confirmDone();
     }
 
+    function whatsappFallback() {
+      var wa = cfg("WHATSAPP", "");
+      if (!wa) { mailtoFallback(); return; }
+      var url = "https://wa.me/" + wa + "?text=" + encodeURIComponent(body());
+      window.open(url, "_blank", "noopener");
+      confirmDone();
+    }
+
     var emailOk = function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); };
     var telOk = function (v) { return v.replace(/\D/g, "").length >= 8; };
     function todayStr() {
@@ -268,13 +276,9 @@
     if (btnSubmit) {
       btnSubmit.addEventListener("click", function () {
         if (!validateForm()) return;
-        // No configured provider -> mailto right away.
-        if (!window.ttMail || window.ttMail.provider() === "mailto") { mailtoFallback(); return; }
-        var self = this; var old = self.innerHTML;
-        self.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi…'; self.disabled = true;
-        window.ttMail.send(payload(), { template: cfg("EMAILJS_TEMPLATE_ID", "") })
-          .then(function () { confirmDone(); })
-          .catch(function () { self.innerHTML = old; self.disabled = false; mailtoFallback(); });
+        // Commandes & devis partent toujours par WhatsApp (plus rapide, plus fiable
+        // qu'un envoi mail et c'est là que Thalia's Traiteur répond au quotidien).
+        whatsappFallback();
       });
     }
 
