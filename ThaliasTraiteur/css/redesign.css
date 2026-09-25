@@ -1599,14 +1599,6 @@ a.soc-soon:hover { opacity: 0.8; }
   .btn-ed--solid, .btn-red, .btn-ed--ghost { font-size: 0.82rem; }
 }
 
-/* Theme switcher as a header icon (identical to the cart icon) */
-.tt-theme-btn {
-  background: none; border: none; cursor: pointer;
-  color: var(--text); font-size: 1.15rem; padding: 6px 10px;
-  line-height: 1; border-radius: 8px; transition: color 0.2s, background 0.2s;
-}
-.tt-theme-btn:hover { color: var(--primary); background: var(--surface-2); }
-
 /* Remove rating stars on menu cards + dish popup */
 .mstars, #mpStars { display: none !important; }
 
@@ -1644,4 +1636,94 @@ a.soc-soon:hover { opacity: 0.8; }
 }
 @media (max-width: 600px) {
   .hero-media { height: 40vh; min-height: 220px; }
+}
+
+/* ---- Press mentions ("Ils ont parlé de nous") ---- */
+.pressgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.presscard {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px 28px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.06);
+}
+.presscard-src {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+.presscard-src span {
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.presscard h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin: 0 0 12px;
+  color: var(--heading, var(--text));
+}
+.presscard p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 18px;
+}
+.presscard-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+.presscard-cta i { font-size: 0.78rem; }
+@media (max-width: 767.98px) {
+  .pressgrid { grid-template-columns: 1fr; gap: 18px; }
+  .presscard { padding: 24px 22px; }
+}
+
+/* ---- Sticky mobile order CTA (stacks left of the WhatsApp bubble) ---- */
+.tt-sticky-cta { display: none; }
+@media (max-width: 767.98px) {
+  .tt-sticky-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    left: 14px;
+    right: 72px;
+    bottom: 14px;
+    z-index: 9989;
+    height: 50px;
+    border-radius: 14px;
+    background: var(--primary);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(var(--primary-rgb), 0.35);
+  }
+  .tt-sticky-cta:active { transform: scale(0.98); }
+  body { padding-bottom: 78px; }
 }

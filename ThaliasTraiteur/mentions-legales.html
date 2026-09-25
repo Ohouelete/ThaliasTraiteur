@@ -26,14 +26,13 @@
    <meta name="twitter:description" content="Mentions légales de Thalia's Traiteur." />
    <meta name="twitter:image" content="https://thaliastraiteur.com/img/banner-img.webp" />
 
-   <script>(function(){try{var t=localStorage.getItem("tt-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
    <link href="css/bootstrap.min.css" rel="stylesheet" />
    <link rel="stylesheet" href="css/all.min.css?v=3919fcba" />
    <link rel="stylesheet" href="css/style.css" />
-   <link rel="stylesheet" href="css/redesign.css" />
+   <link rel="stylesheet" href="css/redesign.css?v=a53022ce" />
    <link rel="stylesheet" href="css/excellence.css" />
    <link rel="stylesheet" href="css/sweetalert2.min.css" />
 </head>
@@ -66,7 +65,6 @@
          </a>
          <div class="nav-actions d-flex align-items-center gap-2 order-lg-last">
             <button class="tt-cart-btn" data-cart-toggle type="button" title="Mon panier" aria-label="Mon panier"><i class="fas fa-shopping-bag"></i><span class="tt-cart-count">0</span></button>
-            <button id="themeToggle" class="tt-theme-btn" type="button" title="Changer de thème" aria-label="Changer de thème"><i class="fas fa-palette"></i></button>
             <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
          </div>
          <div class="collapse navbar-collapse order-lg-2" id="navmenu">
@@ -171,10 +169,10 @@
    <script src="js/jquery-3.7.1.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/order-type.js"></script>
-   <script src="js/cart.js"></script>
-   <script src="js/theme-switch.js"></script>
-   <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Haut de page" title="Haut de page"><i class="fas fa-chevron-up"></i></button>
+   <script src="js/cart.js"></script>   <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Haut de page" title="Haut de page"><i class="fas fa-chevron-up"></i></button>
    <script>(function(){var b=document.getElementById("btt");if(b)window.addEventListener("scroll",function(){b.classList.toggle("show",window.scrollY>300);});})();</script>
+   <!-- Sticky mobile order CTA -->
+   <a href="commander.html" class="tt-sticky-cta"><i class="fas fa-utensils"></i>Commander maintenant</a>
 </body>
 
 </html>
