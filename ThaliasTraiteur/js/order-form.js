@@ -9,7 +9,7 @@
     "Poulet Braisé":27,"Poisson Braisé":27,"Côtelettes de Porc Braisées":29,"Brochettes de Poulet":27,
     "Brochettes de Tilapia":27,"Poulet BBQ et ses Légumes Grillés":27,"Saumon Grillé et ses Légumes":32,
     "Soupe du Chasseur":37,"Soupe du Pêcheur":37,"Escargots Sautés":37,"Gbofloto":17,
-    "Beignets Jaune + Vermicelles":17,"Repas d'Ailleurs":12,"Brochettes de Filles Mignons":32,
+    "Beignets Jaune + Vermicelles":17,"Brochettes de Filet Mignon":32,
     "Marmite de Fruits de Mer et Légumes":37,"Salade Crevettes Avocat":17,"Nems ou Rouleaux":17,
     "Salade de Thon":17,"Salade de tomates mozzarella":17,"Salade de tomates au concombre et mozzarella":17,
     "Tomate farcie aux œufs":17,"Salade de tomates aux épices grecques":17,"Salade de tomates":17,
