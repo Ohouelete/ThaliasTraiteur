@@ -47,6 +47,13 @@
         "?subject=" + encodeURIComponent(p["_subject"]) + "&body=" + encodeURIComponent(p["details"] + "\n\nMerci !");
       done();
     }
+    function whatsappFallback() {
+      var wa = cfg("WHATSAPP", "");
+      if (!wa) { mailtoFallback(); return; }
+      var text = payload()["details"] + "\n\nMerci !";
+      window.open("https://wa.me/" + wa + "?text=" + encodeURIComponent(text), "_blank", "noopener");
+      done();
+    }
 
     btn.addEventListener("click", function () {
       var rules = [
@@ -55,12 +62,8 @@
         { id: "cMsg", msg: "Écrivez votre message." }
       ];
       if (window.ttForm && !window.ttForm.check(rules)) return;
-      if (!window.ttMail || window.ttMail.provider() === "mailto") { mailtoFallback(); return; }
-      var old = btn.innerHTML;
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi…'; btn.disabled = true;
-      window.ttMail.send(payload(), { template: cfg("EMAILJS_TEMPLATE_ID_CONTACT", "") })
-        .then(function () { done(); })
-        .catch(function () { btn.innerHTML = old; btn.disabled = false; mailtoFallback(); });
+      // Tous les messages partent par WhatsApp (plus rapide, plus fiable qu'un envoi mail).
+      whatsappFallback();
     });
   });
 })();
