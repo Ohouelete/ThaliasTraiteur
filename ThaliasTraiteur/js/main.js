@@ -398,23 +398,6 @@ new Swiper('.tesSwiper', {
     setInterval(tick, 1000);
 })();
 
-/* â”€â”€ NEWSLETTER â”€â”€ */
-document.getElementById('nlBtn').addEventListener('click', function() {
-    var email = document.getElementById('nlEmail').value;
-    if (email && email.includes('@')) {
-        var btn = this;
-        btn.textContent = '✓ Abonné !';
-        btn.style.background = '#4ade80';
-        btn.style.color = '#222';
-        document.getElementById('nlEmail').value = '';
-        setTimeout(function() {
-            btn.textContent = "S'abonner";
-            btn.style.background = '';
-            btn.style.color = '';
-        }, 3000);
-    }
-});
-
 /*  NUMBER COUNTER ANIMATION*/
 var numAnimated = false;
 window.addEventListener('scroll', function() {
