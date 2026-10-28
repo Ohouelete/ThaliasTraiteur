@@ -123,9 +123,9 @@
         L.push("• Nom : " + (val("oNom") || "—"));
         L.push("• Téléphone : " + (val("oTel") || "—"));
         L.push("• Courriel : " + (val("oMail") || "—"));
-        L.push("• Date de livraison : " + (val("oDate") || "—"));
-        L.push("• Heure : " + (val("oHeure") || "—"));
-        L.push("• Adresse de livraison : " + (val("oAdresse") || "—"));
+        L.push("• Date de livraison : " + (val("oDate") || "à convenir"));
+        L.push("• Heure : " + (val("oHeure") || "à convenir"));
+        L.push("• Adresse de livraison : " + (val("oAdresse") || "à convenir"));
       }
       L.push("", "Plats commandés :");
       L = L.concat(cartLines());
@@ -244,6 +244,8 @@
       return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
     }
     var dateFutureOk = function (v) { return !!v && v >= todayStr(); };
+    // Livraison : date facultative (on en reparle sur WhatsApp), mais jamais dans le passé
+    var dateOptionalOk = function (v) { return !v || v >= todayStr(); };
     // block past dates in the native pickers
     ["oDate", "oDateE"].forEach(function (id) {
       var el = document.getElementById(id);
@@ -259,9 +261,9 @@
         rules.push({ id: "oDateE", test: dateFutureOk, msg: "Choisissez une date à venir." });
         rules.push({ id: "oHeureE", msg: "Indiquez l'heure de l'événement." });
       } else {
-        rules.push({ id: "oDate", test: dateFutureOk, msg: "Choisissez une date à venir." });
-        rules.push({ id: "oHeure", msg: "Indiquez l'heure de livraison." });
-        rules.push({ id: "oAdresse", msg: "Indiquez l'adresse de livraison." });
+        // Date, heure et adresse facultatives : la commande part sur WhatsApp,
+        // où Thalia's Traiteur les confirme avec le client.
+        rules.push({ id: "oDate", test: dateOptionalOk, msg: "Choisissez une date à venir." });
       }
       if (window.ttForm) {
         if (!window.ttForm.check(rules)) return false;
