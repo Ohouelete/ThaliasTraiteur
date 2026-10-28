@@ -22,7 +22,7 @@ SITE_URL = "https://thaliastraiteur.com"
 ROOT    = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SITE    = os.path.join(ROOT, "ThaliasTraiteur")
 LANG    = "fr-CA"
-OG_IMG  = "img/banner-img.webp"
+OG_IMG  = "img/dishes/nathalie-garba.webp"
 
 # title / description retravaillés pour cibler les requêtes réelles.
 # desc ≈ 150-160 caractères (au-delà, Google tronque).

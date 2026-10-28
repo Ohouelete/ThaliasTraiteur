@@ -86,7 +86,7 @@
       "areaServed": cfg("ZONE", "Québec"),
       "address": { "@type": "PostalAddress", "addressRegion": "QC", "addressCountry": "CA" }
     };
-    if (origin) { data.url = origin + "/"; data.image = origin + "/img/banner-img.webp"; data.logo = origin + "/img/logo.webp"; }
+    if (origin) { data.url = origin + "/"; data.image = origin + "/img/dishes/nathalie-garba.webp"; data.logo = origin + "/img/logo.webp"; }
     if (sameAs.length) data.sameAs = sameAs;
     var wa = cfg("WHATSAPP", ""); if (wa) data.contactPoint = { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+" + wa };
     var s = document.createElement("script"); s.type = "application/ld+json";
